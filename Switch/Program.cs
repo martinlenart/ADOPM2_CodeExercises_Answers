@@ -5,38 +5,24 @@ namespace Switch
 {
     class Program
     {
-        public class A
-        {
-            List<int> myInts = new List<int>();
-
-            public string this[int idx] => "Hello";
-            public A()
-            {
-                for (int i = 0; i < 10; i++)
-                {
-                    myInts.Add(i);
-                }
-            }
-        }
         static void Main(string[] args)
         {
-            var myA = new A();
-            Console.WriteLine(myA[int.MaxValue]);
-            
-            Console.WriteLine("Hello World!");
-
+            //var i = 4;
             var i = 5;
             switch (i)
             {
                 case 4:
-                case 5: Console.WriteLine("Hello 5");
-                    Console.WriteLine("Hello 5");
+                case 5:
+                    Console.WriteLine("Hello 4 and 5");
+                    Console.WriteLine("And I could do something else here");
                     break;
                 case 6:
-                    Console.WriteLine("Hello 6");
-                    Console.WriteLine("Hello 6");
+                    Console.WriteLine("Hello exactly 6");
+                    Console.WriteLine("And I could do something else here");
                     break;
-                default: Console.WriteLine("Default");
+                default:
+                    Console.WriteLine("Default");
+                    Console.WriteLine("And I could do something else here");
                     break;
             }
 
@@ -47,6 +33,8 @@ namespace Switch
                 6 => "Hello6",
                 _ => "Default"
             };
+
+            Console.WriteLine($"\n{s}");
         }
     }
 }

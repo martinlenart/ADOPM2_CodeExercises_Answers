@@ -4,69 +4,61 @@ namespace ValueRef
 {
     class Program
     {
-        struct A
+        struct Astruct
         {
             public int MyInt { get; set; }
         }
-        class B
+        class Aclass
         {
             public int MyInt { get; set; }
         }
 
         static void Main(string[] args)
         {
-            (string, int, float)[] mySuperTuppleArray = new (string, int, float)[5];
-
-            
-            
+                      
             int a = 0;
-            B myB1 = null;
+            Aclass myAclass = null;
             Console.WriteLine(a);
-            DoSomething0(a, out myB1);
+            DoSomething0(a, out myAclass);
             Console.WriteLine(a);
-            Console.WriteLine(myB1.MyInt);
-
+            Console.WriteLine(myAclass.MyInt);
             Console.WriteLine();
 
-            var myA = new A { MyInt = 0 };
-            Console.WriteLine(myA.MyInt);
-            DoSomething2(myA);
-            Console.WriteLine(myA.MyInt);
+            var myAstruct = new Astruct { MyInt = 0 };
+            Console.WriteLine(myAstruct.MyInt);
+            DoSomething1(myAstruct);
+            Console.WriteLine(myAstruct.MyInt);
 
-            var myB = new B { MyInt = 0 };
-            Console.WriteLine(myB.MyInt);
-            DoSomething3(myB);
-            Console.WriteLine(myB.MyInt);
-
-            /*
+            myAclass = new Aclass { MyInt = 0 };
+            Console.WriteLine(myAclass.MyInt);
+            DoSomething2(myAclass);
+            Console.WriteLine(myAclass.MyInt);
             Console.WriteLine();
+
             int[] myArray = { 1, 2, 3, 4, 5 };
             Console.WriteLine($"myArray[3] = {myArray[3]}");
-            DoSomething1(myArray);
+            DoSomething3(myArray);
             Console.WriteLine($"myArray[3] = {myArray[3]}");
-            */
         }
 
-        static void DoSomething0(int a, out B outB)
+        static void DoSomething0(int a, out Aclass outB)
         {
             a = 5;
-            outB = new B { MyInt = 15 };
+            outB = new Aclass { MyInt = 15 };
         }
-        static void DoSomething1(int[] array)
+        static void DoSomething3(int[] array)
         {
             array = new int[25];
             array[3] = 5;
         }
-        static void DoSomething2(A myA)
+        static void DoSomething1(Astruct myA)
         {
             myA.MyInt= 5;
         }
-        static void DoSomething3(B myB)
+        static void DoSomething2(Aclass myB)
         {
-            myB = new B();
+            myB = new Aclass();
             myB.MyInt = 5;
-
         }
-
     }
 }

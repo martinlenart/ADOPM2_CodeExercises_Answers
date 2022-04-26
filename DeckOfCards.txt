@@ -1,6 +1,6 @@
-Modellera ett Spelkort
+﻿Modellera ett Spelkort
 - Skapa ett spelkort
-- Ett skapat spelkort ska inte kunna �ndras
+- Ett skapat spelkort ska inte kunna ändras
 - Skriva ut i konsolen spelkortet, typ 
   - Two of Spades, King of Hearts, Queen of Clubs, Ten of Diamonds
 
