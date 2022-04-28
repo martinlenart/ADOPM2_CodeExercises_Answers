@@ -16,49 +16,41 @@ namespace ValueRef
         static void Main(string[] args)
         {
                       
-            int a = 0;
-            Aclass myAclass = null;
-            Console.WriteLine(a);
-            DoSomething0(a, out myAclass);
-            Console.WriteLine(a);
-            Console.WriteLine(myAclass.MyInt);
-            Console.WriteLine();
-
-            var myAstruct = new Astruct { MyInt = 0 };
-            Console.WriteLine(myAstruct.MyInt);
-            DoSomething1(myAstruct);
-            Console.WriteLine(myAstruct.MyInt);
-
-            myAclass = new Aclass { MyInt = 0 };
-            Console.WriteLine(myAclass.MyInt);
-            DoSomething2(myAclass);
-            Console.WriteLine(myAclass.MyInt);
-            Console.WriteLine();
-
-            int[] myArray = { 1, 2, 3, 4, 5 };
-            Console.WriteLine($"myArray[3] = {myArray[3]}");
-            DoSomething3(myArray);
-            Console.WriteLine($"myArray[3] = {myArray[3]}");
         }
 
-        static void DoSomething0(int a, out Aclass outB)
+        static void DoSomething0(int a, out int b)
         {
-            a = 5;
-            outB = new Aclass { MyInt = 15 };
+            b = a * 2;
+            a = a * 10;
         }
-        static void DoSomething3(int[] array)
+        static void DoSomething1(int a, out Aclass outB)
         {
-            array = new int[25];
+            outB = new Aclass { MyInt = a*2 };
+            a = a * 10;
+        }
+
+        static void DoSomething3(int a, Astruct myA)
+        {
+            myA.MyInt = a;
+        }
+
+        static void DoSomething1(int[] array)
+        {
             array[3] = 5;
         }
-        static void DoSomething1(Astruct myA)
+        static void DoSomething2(int a, int[] array)
         {
-            myA.MyInt= 5;
+            array = new int[25];
+            array[3] = a;
         }
-        static void DoSomething2(Aclass myB)
+         static void DoSomething4(int a, Aclass myB)
+        {
+             myB.MyInt = a;
+        }
+        static void DoSomething5(int a, Aclass myB)
         {
             myB = new Aclass();
-            myB.MyInt = 5;
+            myB.MyInt = a;
         }
     }
 }
