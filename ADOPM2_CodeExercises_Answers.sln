@@ -11,7 +11,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		DeckOfCards.txt = DeckOfCards.txt
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdressList", "AdressList\AdressList.csproj", "{39CF10FA-2E46-4C01-A648-214A30C48C72}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ValueRefAdressList", "AdressList\ValueRefAdressList.csproj", "{39CF10FA-2E46-4C01-A648-214A30C48C72}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inheritance", "Inheritance\Inheritance.csproj", "{3AF3FFA6-D6B8-49C1-A7D4-8E049B6EBD75}"
 EndProject
