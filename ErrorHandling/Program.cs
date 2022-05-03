@@ -72,3 +72,8 @@ namespace ErrorHandling
 
     }
 }
+
+//Exercise:
+//1. Change the messages thrown in PressTheButton() to your own ExceptionMessage, ExplosionException inheriting from Exception.
+//   Create a property in ExplosionExcepetion that of the button pressed and severity of the error (managable and fatal)
+//2. Modify the code in ProcessUserInput() to catch ExplosionException and depending on severity gives an user message(manageable) or rethrow (fatal)
