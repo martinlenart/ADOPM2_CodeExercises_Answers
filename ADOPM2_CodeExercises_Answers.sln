@@ -23,8 +23,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Switch", "Switch\Switch.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Constructors", "Constructors\Constructors.csproj", "{B2A2C428-875B-40F7-905B-3DBF0FF57D26}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ErrorHandling", "ErrorHandling\ErrorHandling.csproj", "{0600746B-F2F5-46F1-A58C-0EC4CC9B7C50}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassFactory", "ClassFactory\ClassFactory.csproj", "{489FDEAA-BE66-4E66-9CC6-7BFA9D509A7C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chefs", "Chefs\Chefs.csproj", "{1D964FB9-EC0E-42EA-B2E1-AB80FA745586}"
@@ -65,10 +63,6 @@ Global
 		{B2A2C428-875B-40F7-905B-3DBF0FF57D26}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B2A2C428-875B-40F7-905B-3DBF0FF57D26}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B2A2C428-875B-40F7-905B-3DBF0FF57D26}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0600746B-F2F5-46F1-A58C-0EC4CC9B7C50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0600746B-F2F5-46F1-A58C-0EC4CC9B7C50}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0600746B-F2F5-46F1-A58C-0EC4CC9B7C50}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0600746B-F2F5-46F1-A58C-0EC4CC9B7C50}.Release|Any CPU.Build.0 = Release|Any CPU
 		{489FDEAA-BE66-4E66-9CC6-7BFA9D509A7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{489FDEAA-BE66-4E66-9CC6-7BFA9D509A7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{489FDEAA-BE66-4E66-9CC6-7BFA9D509A7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
